@@ -20,7 +20,6 @@ export const genresSlice = createSlice({
 export const getGenresThunk = () => dispatch => {
     dispatch(genericRequestThunk(async () => {
         const res = await axios.get('/genres');
-        console.log(res)
         dispatch(setGenres(res.data));
     }))
 }

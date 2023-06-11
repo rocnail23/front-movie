@@ -18,7 +18,7 @@ const Home = () => {
     }
 
     const navigate = useNavigate();
-    console.log(genres)
+    
     return (
         <Row>
             <Col md={3} xl={2}>
