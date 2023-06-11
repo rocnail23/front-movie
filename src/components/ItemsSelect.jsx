@@ -54,7 +54,7 @@ const ItemsSelect = ({ items, itemsSelected, setItemsSelected, isMultiple=true, 
                                     </button>
                                     <Card
                                         className="form-card"
-                                        key={item.id} 
+                                        key={item?.id} 
                                     >
                                         {structure(item)}
                                     </Card>

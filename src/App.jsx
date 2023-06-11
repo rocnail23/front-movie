@@ -26,7 +26,6 @@ function App() {
   return (
     <HashRouter>
       <div className="educational-purposes" >
-            Front-end made by Academlo instructors for educational purposes
         </div>
       <NavBar />
       <Notification />

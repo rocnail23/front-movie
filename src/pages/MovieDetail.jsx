@@ -45,13 +45,13 @@ const MovieDetail = () => {
                     <p >{movie.synopsis}</p>
                     <h3>Directors</h3>
                     <Row xs={1} sm={2} xl={3} className="g-4">
-                        {movie.directors?.map((director) => (
+                        {movie.directors.map((director) => (
                             <DirectorCard director={director} key={director.id} showOptions={false} />
                         ))}
                     </Row>
                     <h3 className="mt-5">Actors</h3>
                     <Row xs={1} sm={2} xl={3} className="g-4">
-                        {movie.actors?.map((actor) => (
+                        {movie.actors.map((actor) => (
                             <ActorCard actor={actor} key={actor.id} showOptions={false} />
                         ))}
                     </Row>

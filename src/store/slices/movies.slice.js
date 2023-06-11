@@ -11,8 +11,8 @@ export const moviesSlice = createSlice({
         deleteMovie: (state, { payload }) =>
             state.filter(movie => movie.id !== payload),
         updateMovie: (state, { payload: { id, movie } }) => {
+            console.log(movie)
             const index = state.findIndex(movie => movie.id === id);
-            console.log(movie);
             state[index] = movie;
         }
     }

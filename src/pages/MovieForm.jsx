@@ -41,7 +41,8 @@ const MovieForm = () => {
             dispatch(addMovieThunk(movie));
             navigate("/");
         } else {
-            dispatch(updateMovieThunk(+id, movie));
+            console.log(movie)
+            dispatch(updateMovieThunk(+id,movie));
             navigate(`/movies/${id}`);
         }
     }

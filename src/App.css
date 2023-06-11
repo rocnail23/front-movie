@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+img{
+ width: 100%;
+}
+
 .notification-container {
     position: fixed;
     left: 0;
